@@ -10,9 +10,8 @@ import software.bernie.geckolib3.model.provider.data.EntityModelData;
 
 public class TiktikModel extends AnimatedGeoModel<TiktikEntity> {
     public Identifier getModelLocation(TiktikEntity object) {
-        return new Identifier(Hallownest.MOD_ID, "geo/raccoon.geo.json");
+        return new Identifier(Hallownest.MOD_ID, "geo/tiktik.geo.json");
     }
-
 
     public Identifier getTextureLocation(TiktikEntity object) {
         return new Identifier(Hallownest.MOD_ID, "textures/entity/tiktik/tiktik.png");
