@@ -1,6 +1,7 @@
 package net.archibold.hallownest;
 
 import net.archibold.hallownest.enchantment.ModEnchantments;
+import net.archibold.hallownest.entity.attribute.ModEntityAttributes;
 import net.archibold.hallownest.item.ModItems;
 import net.archibold.hallownest.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
@@ -16,6 +17,7 @@ public class Hallownest implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModEnchantments.registerModEnchantments();
+		ModEntityAttributes.registerModEntityAttributes();
 
 	}
 }
