@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hallownest:pale_ore",
+      "required": true
+    }
+  ]
+}

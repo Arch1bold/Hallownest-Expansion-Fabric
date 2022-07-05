@@ -1,0 +1,17 @@
+package net.archibold.hallownest.modinit;
+
+import net.archibold.hallownest.Hallownest;
+import net.fabricmc.fabric.api.item.v1.FabricItem;
+import net.minecraft.item.Item;
+import net.minecraft.util.Identifier;
+import net.minecraft.tag.TagKey;
+import net.minecraft.util.registry.Registry;
+
+public class HkTags {
+    // Sole purpose is to initialize the tag wrappers at mod startup
+    public static void initTags() {
+    }
+
+    public static TagKey<Item> NAIL_REPAIR_ITEMS
+            = TagKey.of(Registry.ITEM_KEY, new Identifier(Hallownest.MOD_ID, "nail_repair_items"));
+}

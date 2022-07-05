@@ -1,0 +1,18 @@
+{
+  "item.hallownest.pale_ore": "Pale Ore",
+  "item.hallownest.old_nail": "Old Nail",
+  "item.hallownest.sharp_nail": "Sharpened Nail",
+  "item.hallownest.channel_nail": "Channeled Nail",
+  "item.hallownest.coil_nail": "Coiled Nail",
+  "item.hallownest.pure_nail": "Pure Nail",
+  "item.hallownest.mothwing_cloak": "Mothwing Cloak",
+  "item.hallownest.geo": "Geo",
+
+  "block.hallownest.tanzanite_block": "Block of Tanzanite",
+  "block.hallownest.solid_pale_ore": "Fossilised Pale Ore",
+  "block.hallownest.bench": "Bench",
+
+  "enchantment.hallownest.bounce": "Bounce",
+
+  "itemGroup.hallownest.hallownest_tab": "Hallownest Expansion Tab"
+}

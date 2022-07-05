@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hallownest:block/solid_pale_ore"
+  }
+}

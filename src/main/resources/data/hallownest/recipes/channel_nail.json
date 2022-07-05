@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hallownest:pale_ore"
+    },
+    {
+      "item": "hallownest:sharp_nail"
+    }
+  ],
+  "result": {
+    "item": "hallownest:channel_nail"
+  }
+}

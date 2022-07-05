@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 300,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "hallownest:solid_pale_ore"
+  },
+  "result": "hallownest:pale_ore"
+}

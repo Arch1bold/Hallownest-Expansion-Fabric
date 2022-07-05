@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+ "ingredients": [
+    {
+      "item": "hallownest:tanzanite_block"
+    },
+  {
+    "item": "hallownest:old_nail"
+  }
+    ],
+  "result": {
+    "item": "hallownest:sharp_nail"
+  }
+}
