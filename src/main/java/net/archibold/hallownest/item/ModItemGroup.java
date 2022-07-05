@@ -21,6 +21,7 @@ public class ModItemGroup {
                 stacks.add(new ItemStack(ModItems.COIL_NAIL));
                 stacks.add(new ItemStack(ModItems.PURE_NAIL));
                 stacks.add(new ItemStack(ModItems.MOTHWING_CLOAK));
+                stacks.add(new ItemStack(ModItems.TIKTIK_SPAWN_EGG));
             })
             .build();
 }

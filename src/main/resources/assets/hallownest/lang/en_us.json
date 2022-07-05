@@ -7,12 +7,9 @@
   "item.hallownest.pure_nail": "Pure Nail",
   "item.hallownest.mothwing_cloak": "Mothwing Cloak",
   "item.hallownest.geo": "Geo",
-
-  "block.hallownest.tanzanite_block": "Block of Tanzanite",
+  "item.hallownest.tiktik_spawn_egg": "Tiktik Spawn Egg",
   "block.hallownest.solid_pale_ore": "Fossilised Pale Ore",
   "block.hallownest.bench": "Bench",
-
   "enchantment.hallownest.bounce": "Bounce",
-
   "itemGroup.hallownest.hallownest_tab": "Hallownest Expansion Tab"
 }

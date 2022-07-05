@@ -7,6 +7,7 @@ import net.archibold.hallownest.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib3.GeckoLib;
 
 public class Hallownest implements ModInitializer {
 	public static final String MOD_ID = "hallownest";
@@ -14,7 +15,8 @@ public class Hallownest implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItems.registerModItems();
+        GeckoLib.initialize();
+        ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModEnchantments.registerModEnchantments();
 		ModEntityAttributes.registerModEntityAttributes();

@@ -1,11 +1,13 @@
 package net.archibold.hallownest.item;
 
 import net.archibold.hallownest.Hallownest;
+import net.archibold.hallownest.entity.ModEntities;
 import net.archibold.hallownest.item.ModToolMaterials;
 import net.archibold.hallownest.item.custom.CloakItem;
 import net.archibold.hallownest.item.custom.NailItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -36,10 +38,14 @@ public class ModItems {
     public static final Item GEO = registerItem("geo",
             new Item(
                     new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
+    public static final Item TIKTIK_SPAWN_EGG = registerItem("tiktik_spawn_egg",
+            new SpawnEggItem(ModEntities.TIKTIK, 0x948e8d, 0x3b3635,
+                    new FabricItemSettings().group(HALLOWNEST_TAB).maxCount(1)));
 
-    private static Item registerItem(String name, Item item){
+    private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Hallownest.MOD_ID, name), item);
-}
+    }
+
     public static void registerModItems() {
         Hallownest.LOGGER.debug("Registering Mod Items for " + Hallownest.MOD_ID);
     }
