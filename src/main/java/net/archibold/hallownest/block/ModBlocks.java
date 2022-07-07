@@ -17,6 +17,7 @@ import net.minecraft.util.registry.Registry;
 public class ModBlocks {
     public static final Block SOLID_PALE_ORE = registerBlock("solid_pale_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.HALLOWNEST_TAB);
+
     public static final Block BENCH = registerBlock("bench",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.HALLOWNEST_TAB);
 

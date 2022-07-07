@@ -31,7 +31,7 @@ public class TiktikEntity extends AnimalEntity implements Angerable, IAnimatable
     @Nullable
     public UUID angryAt;
     private int angerTime;
-    private AnimationFactory factory = new AnimationFactory(this);
+    private final AnimationFactory factory = new AnimationFactory(this);
 
     public TiktikEntity(EntityType<? extends TiktikEntity> entityType, World world) {
         super(entityType, world);

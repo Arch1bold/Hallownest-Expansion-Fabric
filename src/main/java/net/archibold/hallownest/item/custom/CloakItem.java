@@ -31,9 +31,6 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 public class CloakItem extends TridentItem implements Vanishable {
-    public static final int field_30926 = 10;
-    public static final float field_30927 = 8.0F;
-    public static final float field_30928 = 2.5F;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
     public CloakItem(Item.Settings settings) {

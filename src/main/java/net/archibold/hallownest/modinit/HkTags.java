@@ -8,7 +8,6 @@ import net.minecraft.tag.TagKey;
 import net.minecraft.util.registry.Registry;
 
 public class HkTags {
-    // Sole purpose is to initialize the tag wrappers at mod startup
     public static void initTags() {
     }
 

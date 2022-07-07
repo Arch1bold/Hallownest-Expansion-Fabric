@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hallownest:mothwing_cloak"
+    },
+    {
+      "item": "hallownest:crystal_heart"
+    }
+  ],
+  "result": {
+    "item": "hallownest:crystal_cloak"
+  }
+}

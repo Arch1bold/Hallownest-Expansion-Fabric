@@ -20,7 +20,12 @@ public class ModItemGroup {
                 stacks.add(new ItemStack(ModItems.CHANNEL_NAIL));
                 stacks.add(new ItemStack(ModItems.COIL_NAIL));
                 stacks.add(new ItemStack(ModItems.PURE_NAIL));
+                stacks.add(new ItemStack(ModItems.MASK_SHARD));
+                stacks.add(new ItemStack(ModItems.ANCIENT_MASK));
                 stacks.add(new ItemStack(ModItems.MOTHWING_CLOAK));
+                stacks.add(new ItemStack(ModItems.CRYSTAL_HEART));
+                stacks.add(new ItemStack(ModItems.CRYSTAL_CLOAK));
+                stacks.add(new ItemStack(ModItems.SHADE_CLOAK));
                 stacks.add(new ItemStack(ModItems.TIKTIK_SPAWN_EGG));
             })
             .build();
