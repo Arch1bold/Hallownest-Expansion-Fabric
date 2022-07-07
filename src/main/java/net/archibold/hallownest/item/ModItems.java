@@ -2,43 +2,23 @@ package net.archibold.hallownest.item;
 
 import net.archibold.hallownest.Hallownest;
 import net.archibold.hallownest.entity.ModEntities;
-import net.archibold.hallownest.item.custom.CloakItem;
-import net.archibold.hallownest.item.custom.ModArmorItem;
-import net.archibold.hallownest.item.custom.NailItem;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
+import net.archibold.hallownest.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.tinyremapper.extension.mixin.common.Logger;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.world.World;
-
-import javax.annotation.Nullable;
-import java.awt.*;
-import java.util.List;
 
 import static net.archibold.hallownest.item.ModItemGroup.*;
 
 public class ModItems {
-    @Override
-    @Environment(EnvType.CLIENT)
-    public void appendHoverText(ItemStack stack, Logger.Level world, List<Component> tooltip, TooltipFlag flags) {
-        if (Artifacts.CONFIG.general.showTooltips) {
-            appendTooltipDescription(tooltip, this.getDescriptionId() + ".tooltip");
-        }
-    }
 
     public static final Item PALE_ORE = registerItem("pale_ore",
             new Item(new FabricItemSettings().group(HALLOWNEST_TAB)));
     public static final Item OLD_NAIL = registerItem("old_nail",
-            new NailItem(ModToolMaterials.PALE_ORE, 0, -3f,
+            new OldNailItem(ModToolMaterials.PALE_ORE, 0, -3f,
                     new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
     public static final Item SHARP_NAIL = registerItem("sharp_nail",
             new NailItem(ModToolMaterials.PALE_ORE, 1, -1f,
@@ -53,14 +33,14 @@ public class ModItems {
             new NailItem(ModToolMaterials.PALE_ORE, 4, 3f,
                     new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
     public static final Item MASK_SHARD = registerItem("mask_shard",
-            new Item(new FabricItemSettings().group(HALLOWNEST_TAB)));
+            new MaskShardItem(new FabricItemSettings().group(HALLOWNEST_TAB)));
     public static final Item ANCIENT_MASK = registerItem("ancient_mask",
             new ModArmorItem(ModArmorMaterials.MASK_SHARD, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
     public static final Item MOTHWING_CLOAK = registerItem("mothwing_cloak",
             new CloakItem(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
     public static final Item CRYSTAL_HEART = registerItem("crystal_heart",
-            new Item(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
+            new CrystalHeartItem(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB).rarity(Rarity.UNCOMMON)));
     public static final Item CRYSTAL_CLOAK = registerItem("crystal_cloak",
             new CloakItem(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
     public static final Item SHADE_CLOAK = registerItem("shade_cloak",

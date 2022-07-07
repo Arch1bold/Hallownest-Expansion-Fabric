@@ -11,19 +11,21 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class CrystalHeartItem extends Item {
-    public CrystalHeartItem(Settings settings) {
+public class MaskShardItem extends Item {
+    public MaskShardItem(Settings settings) {
         super(settings);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("item.hallownest.crystal_heart.tooltip_1").formatted(Formatting.GRAY));
-            tooltip.add(Text.translatable("item.hallownest.crystal_heart.tooltip_2".formatted(Formatting.LIGHT_PURPLE)));
+            tooltip.add(Text.translatable("item.hallownest.mask_shard.tooltip_1").formatted(Formatting.GRAY));
+            tooltip.add(Text.translatable("item.hallownest.mask_shard.tooltip_2".formatted(Formatting.LIGHT_PURPLE)));
         } else {
-            tooltip.add(Text.translatable("item.hallownest.crystal_heart.tooltip_1").formatted(Formatting.GRAY));
+            tooltip.add(Text.translatable("item.hallownest.mask_shard.tooltip_1").formatted(Formatting.GRAY));
             tooltip.add(Text.literal("Press Shift for more info!").formatted(Formatting.BOLD));
         }
     }
 }
+//A shard of an ancient mask, worn to protect oneself from harm.
+//Collect more to strengthen your shell and protect yourself from damage.
