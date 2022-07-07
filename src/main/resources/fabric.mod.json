@@ -6,16 +6,15 @@
   "name": "The Hallownest Expansion",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Arch1bold"
+    "Arch1bold",
+    "wavian"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/arch1bold/hallownest-fabric"
   },
-
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
-
+  "icon": "assets/hallownest/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [

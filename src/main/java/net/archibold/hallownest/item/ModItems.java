@@ -5,7 +5,10 @@ import net.archibold.hallownest.entity.ModEntities;
 import net.archibold.hallownest.item.custom.CloakItem;
 import net.archibold.hallownest.item.custom.ModArmorItem;
 import net.archibold.hallownest.item.custom.NailItem;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.tinyremapper.extension.mixin.common.Logger;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
@@ -18,11 +21,19 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
+import java.awt.*;
 import java.util.List;
 
 import static net.archibold.hallownest.item.ModItemGroup.*;
 
 public class ModItems {
+    @Override
+    @Environment(EnvType.CLIENT)
+    public void appendHoverText(ItemStack stack, Logger.Level world, List<Component> tooltip, TooltipFlag flags) {
+        if (Artifacts.CONFIG.general.showTooltips) {
+            appendTooltipDescription(tooltip, this.getDescriptionId() + ".tooltip");
+        }
+    }
 
     public static final Item PALE_ORE = registerItem("pale_ore",
             new Item(new FabricItemSettings().group(HALLOWNEST_TAB)));
