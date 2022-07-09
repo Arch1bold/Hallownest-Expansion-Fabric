@@ -2,16 +2,16 @@
   "schemaVersion": 1,
   "id": "hallownest",
   "version": "${version}",
-
   "name": "The Hallownest Expansion",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "A mod for Minecraft that adds items and features from the popular indie game by Team Cherry, Hollow Knight!",
   "authors": [
     "Arch1bold",
     "wavian"
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/hallownest-expansion",
-    "sources": "https://github.com/arch1bold/hallownest-expansion-fabric"
+    "sources": "https://github.com/arch1bold/hallownest-expansion-fabric",
+    "issues": "https://github.com/arch1bold/hallownest-expansion-fabric/issues"
   },
   "license": "CC0-1.0",
   "icon": "assets/hallownest/icon.png",

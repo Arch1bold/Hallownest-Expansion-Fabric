@@ -9,11 +9,11 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MovementType;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.attribute.EntityAttributeModifier.Operation;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.projectile.TridentEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity.PickupPermission;
+import net.minecraft.entity.projectile.TridentEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.TridentItem;
@@ -65,13 +65,13 @@ public class CloakItem extends TridentItem implements Vanishable {
                         });
                         if (j == 0) {
                             TridentEntity tridentEntity = new TridentEntity(world, playerEntity, stack);
-                            tridentEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, 2.5F + (float)j * 0.5F, 1.0F);
+                            tridentEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, 2.5F + (float) j * 0.5F, 1.0F);
                             if (playerEntity.getAbilities().creativeMode) {
                                 tridentEntity.pickupType = PickupPermission.CREATIVE_ONLY;
                             }
 
                             world.spawnEntity(tridentEntity);
-                            world.playSoundFromEntity((PlayerEntity)null, tridentEntity, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                            world.playSoundFromEntity(null, tridentEntity, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS, 1.0F, 1.0F);
                             if (!playerEntity.getAbilities().creativeMode) {
                                 playerEntity.getInventory().removeOne(stack);
                             }
@@ -86,11 +86,11 @@ public class CloakItem extends TridentItem implements Vanishable {
                         float k = -MathHelper.sin(g * 0.017453292F);
                         float l = MathHelper.cos(f * 0.017453292F) * MathHelper.cos(g * 0.017453292F);
                         float m = MathHelper.sqrt(h * h + k * k + l * l);
-                        float n = 3.0F * ((1.0F + (float)j) / 4.0F);
+                        float n = 3.0F * ((1.0F + (float) j) / 4.0F);
                         h *= n / m;
                         k *= n / m;
                         l *= n / m;
-                        playerEntity.addVelocity((double)h, (double)k, (double)l);
+                        playerEntity.addVelocity(h, k, l);
                         playerEntity.useRiptide(20);
                         if (playerEntity.isOnGround()) {
                             float o = 1.1999999F;
@@ -106,7 +106,7 @@ public class CloakItem extends TridentItem implements Vanishable {
                             soundEvent = SoundEvents.ITEM_TRIDENT_RIPTIDE_1;
                         }
 
-                        world.playSoundFromEntity((PlayerEntity)null, playerEntity, soundEvent, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                        world.playSoundFromEntity(null, playerEntity, soundEvent, SoundCategory.PLAYERS, 1.0F, 1.0F);
                     }
 
                 }
@@ -134,7 +134,7 @@ public class CloakItem extends TridentItem implements Vanishable {
     }
 
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
-        if ((double)state.getHardness(world, pos) != 0.0) {
+        if ((double) state.getHardness(world, pos) != 0.0) {
             stack.damage(2, miner, (e) -> {
                 e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
             });

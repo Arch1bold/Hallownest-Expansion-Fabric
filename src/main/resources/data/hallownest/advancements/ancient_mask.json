@@ -1,0 +1,37 @@
+{
+  "parent": "hallownest:root",
+  "criteria": {
+    "ancient_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hallownest:ancient_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.hallownest.obtain_ancient_mask.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hallownest:ancient_mask"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.hallownest.obtain_ancient_mask.title"
+    }
+  },
+  "requirements": [
+    [
+      "ancient_mask"
+    ]
+  ]
+}

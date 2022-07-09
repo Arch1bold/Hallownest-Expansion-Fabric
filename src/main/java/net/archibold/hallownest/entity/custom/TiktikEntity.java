@@ -52,8 +52,8 @@ public class TiktikEntity extends AnimalEntity implements Angerable, IAnimatable
         this.goalSelector.add(2, new MeleeAttackGoal(this, 1.0, false));
         this.goalSelector.add(3, new WanderAroundGoal(this, 1.0));
         this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 6.0f));
-        this.targetSelector.add(1, new RevengeGoal(this, new Class[0]).setGroupRevenge(new Class[0]));
-        this.targetSelector.add(2, new ActiveTargetGoal<PlayerEntity>((MobEntity) this, PlayerEntity.class, true));
+        this.targetSelector.add(1, new RevengeGoal(this).setGroupRevenge());
+        this.targetSelector.add(2, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, true));
         this.targetSelector.add(3, new UniversalAngerGoal<TiktikEntity>(this, false));
     }
 

@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "hallownest:block/solid_pale_ore" }
+    "": {
+      "model": "hallownest:block/solid_pale_ore"
+    }
   }
 }

@@ -2,15 +2,14 @@ package net.archibold.hallownest.entity;
 
 import net.archibold.hallownest.Hallownest;
 import net.archibold.hallownest.entity.attribute.ModEntityAttributes;
-import net.minecraft.entity.*;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
-import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Arm;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 public class ModLivingEntity extends LivingEntity {
@@ -27,6 +26,7 @@ public class ModLivingEntity extends LivingEntity {
     protected void takeShieldHit(ModLivingEntity attacker) {
         attacker.bounce(this);
     }
+
     public void bounce(ModLivingEntity target) {
         target.takeBounce(0.5, target.getX() - this.getX(), target.getZ() - this.getZ());
     }

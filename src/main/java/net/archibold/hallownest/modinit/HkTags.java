@@ -1,10 +1,9 @@
 package net.archibold.hallownest.modinit;
 
 import net.archibold.hallownest.Hallownest;
-import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
 import net.minecraft.tag.TagKey;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class HkTags {

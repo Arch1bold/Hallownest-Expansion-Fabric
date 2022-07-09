@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "hallownest:block/bench" }
+    "": {
+      "model": "hallownest:block/bench"
+    }
   }
 }

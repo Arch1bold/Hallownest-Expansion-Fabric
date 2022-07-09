@@ -1,8 +1,8 @@
 package net.archibold.hallownest.entity;
 
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.archibold.hallownest.Hallownest;
 import net.archibold.hallownest.entity.custom.TiktikEntity;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;

@@ -14,6 +14,7 @@ public abstract class ModMobEntity
     protected ModMobEntity(EntityType<? extends MobEntity> entityType, World world) {
         super(entityType, world);
     }
+
     public static DefaultAttributeContainer.Builder createModMobAttributes() {
         return LivingEntity.createLivingAttributes().add(EntityAttributes.GENERIC_FOLLOW_RANGE, 16.0).add(ModEntityAttributes.GENERIC_ATTACK_BOUNCE);
     }

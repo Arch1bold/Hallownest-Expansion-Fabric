@@ -11,19 +11,20 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class DreamNailItem extends Item {
-    public DreamNailItem(Item.Settings settings) {
+public class MonarchWingsItem extends Item {
+    public MonarchWingsItem(Settings settings) {
         super(settings);
     }
+
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("item.hallownest.dream_nail.tooltip_1").formatted(Formatting.GRAY));
-            tooltip.add(Text.translatable("item.hallownest.dream_nail.tooltip_2").formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("item.hallownest.monarch_wings.tooltip_1").formatted(Formatting.GRAY));
+            tooltip.add(Text.translatable("item.hallownest.monarch_wings.tooltip_2").formatted(Formatting.WHITE));
         } else {
-            tooltip.add(Text.translatable("item.hallownest.dream_nail.tooltip_1").formatted(Formatting.GRAY));
-            tooltip.add(Text.translatable("item.hallownest.shift.tooltip").formatted(Formatting.BOLD).formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("item.hallownest.monarch_wings.tooltip_1").formatted(Formatting.GRAY));
+            tooltip.add(Text.translatable("item.hallownest.shift.tooltip").formatted(Formatting.BOLD));
         }
 
         super.appendTooltip(stack, world, tooltip, context);

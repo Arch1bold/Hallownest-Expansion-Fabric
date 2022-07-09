@@ -20,12 +20,10 @@ public class MaskShardItem extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("item.hallownest.mask_shard.tooltip_1").formatted(Formatting.GRAY));
-            tooltip.add(Text.translatable("item.hallownest.mask_shard.tooltip_2".formatted(Formatting.LIGHT_PURPLE)));
+            tooltip.add(Text.translatable("item.hallownest.mask_shard.tooltip_2").formatted(Formatting.LIGHT_PURPLE));
         } else {
             tooltip.add(Text.translatable("item.hallownest.mask_shard.tooltip_1").formatted(Formatting.GRAY));
-            tooltip.add(Text.literal("Press Shift for more info!").formatted(Formatting.BOLD));
+            tooltip.add(Text.translatable("item.hallownest.shift.tooltip").formatted(Formatting.BOLD));
         }
     }
 }
-//A shard of an ancient mask, worn to protect oneself from harm.
-//Collect more to strengthen your shell and protect yourself from damage.

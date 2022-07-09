@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "hallownest:old_nail"
+    },
+    "title": {
+      "translate": "advancements.hallownest.root.title"
+    },
+    "description": {
+      "translate": "advancements.hallownest.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/deepslate.png"
+  },
+  "criteria": {
+    "entered_nether": {
+      "trigger": "minecraft:avoid_vibration"
+    }
+  }
+}
