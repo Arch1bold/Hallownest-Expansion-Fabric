@@ -4,6 +4,7 @@ import net.archibold.hallownest.enchantment.ModEnchantments;
 import net.archibold.hallownest.entity.attribute.ModEntityAttributes;
 import net.archibold.hallownest.item.ModItems;
 import net.archibold.hallownest.block.ModBlocks;
+import net.archibold.hallownest.painting.ModPaintings;
 import net.archibold.hallownest.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -20,6 +21,7 @@ public class Hallownest implements ModInitializer {
         ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModEnchantments.registerModEnchantments();
+		ModPaintings.registerPaintings();
 		ModEntityAttributes.registerModEntityAttributes();
 		ModLootTableModifiers.modifyLootTables();
 
