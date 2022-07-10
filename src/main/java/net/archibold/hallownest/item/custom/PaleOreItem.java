@@ -20,10 +20,10 @@ public class PaleOreItem extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("item.hallownest.pale_ore.tooltip_1").formatted(Formatting.GRAY));
-            tooltip.add(Text.translatable("item.hallownest.pale_ore.tooltip_2").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("item.hallownest.pale_ore.tooltip_2").formatted(Formatting.WHITE));
         } else {
             tooltip.add(Text.translatable("item.hallownest.pale_ore.tooltip_1").formatted(Formatting.GRAY));
-            tooltip.add(Text.translatable("item.hallownest.shift.tooltip").formatted(Formatting.BOLD, Formatting.AQUA));
+            tooltip.add(Text.translatable("item.hallownest.shift.tooltip").formatted(Formatting.BOLD, Formatting.WHITE));
         }
     }
 }

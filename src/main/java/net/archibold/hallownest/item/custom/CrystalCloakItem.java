@@ -20,10 +20,10 @@ public class CrystalCloakItem extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("item.hallownest.crystal_cloak.tooltip_1").formatted(Formatting.GRAY));
-            tooltip.add(Text.translatable("item.hallownest.crystal_cloak.tooltip_2").formatted(Formatting.LIGHT_PURPLE));
+            tooltip.add(Text.translatable("item.hallownest.crystal_cloak.tooltip_2").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.translatable("item.hallownest.crystal_cloak.tooltip_1").formatted(Formatting.GRAY));
-            tooltip.add(Text.translatable("item.hallownest.shift.tooltip").formatted(Formatting.BOLD).formatted(Formatting.LIGHT_PURPLE));
+            tooltip.add(Text.translatable("item.hallownest.shift.tooltip").formatted(Formatting.BOLD).formatted(Formatting.DARK_PURPLE));
         }
 
         super.appendTooltip(stack, world, tooltip, context);
