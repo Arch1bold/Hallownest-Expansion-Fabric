@@ -49,6 +49,10 @@ public class ModItems {
             new ShadeCloakItem(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB).rarity(Rarity.EPIC)));
     public static final Item MONARCH_WINGS = registerItem("monarch_wings",
             new MonarchWingsItem(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB).rarity(Rarity.RARE)));
+    public static final Item ISMA_TEAR = registerItem("isma_tear",
+            new Item(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB).rarity(Rarity.UNCOMMON)));
+    public static final Item LUMAFLY_LANTERN = registerItem("lumafly_lantern",
+            new Item(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
     public static final Item GEO = registerItem("geo",
             new GeoItem(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
     public static final Item TIKTIK_SPAWN_EGG = registerItem("tiktik_spawn_egg",
