@@ -1,6 +1,5 @@
 package net.archibold.hallownest;
 
-import net.archibold.hallownest.potion.ModPotions;
 import net.archibold.hallownest.block.ModBlocks;
 import net.archibold.hallownest.effect.ModEffects;
 import net.archibold.hallownest.enchantment.ModEnchantments;
@@ -25,7 +24,6 @@ public class Hallownest implements ModInitializer {
         ModEnchantments.registerModEnchantments();
         ModPaintings.registerPaintings();
         ModEffects.registerEffects();
-        ModPotions.registerPotions();
         ModLootTableModifiers.modifyLootTables();
         ModWorldGen.generateModWorldGen();
 

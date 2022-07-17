@@ -48,9 +48,9 @@ public class ModItems {
     public static final Item MONARCH_WINGS = registerItem("monarch_wings",
             new MonarchWingsItem(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB).rarity(Rarity.RARE)));
     public static final Item LUMAFLY_LANTERN = registerItem("lumafly_lantern",
-            new Item(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
+            new LumaflyLanternItem(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
     public static final Item ISMA_TEAR = registerItem("isma_tear",
-            new Item(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB).food(ModFoodComponents.ISMA_TEAR)));
+            new IsmaTearItem(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB).food(ModFoodComponents.ISMA_TEAR)));
     public static final Item GEO = registerItem("geo",
             new GeoItem(new FabricItemSettings().group(ModItemGroup.HALLOWNEST_TAB)));
 

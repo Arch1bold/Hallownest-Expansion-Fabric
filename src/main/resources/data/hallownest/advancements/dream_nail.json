@@ -1,0 +1,37 @@
+{
+  "parent": "hallownest:root",
+  "criteria": {
+    "ancient_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hallownest:dream_nail"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.hallownest.obtain_dream_nail.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hallownest:dream_nail"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.hallownest.obtain_dream_nail.title"
+    }
+  },
+  "requirements": [
+    [
+      "dream_nail"
+    ]
+  ]
+}
